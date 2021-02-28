@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="style.css">
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Isabel Báez's Portfolio</title>
     <script src="script.js"></script>
   </head>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+    <div class="content">
+        <div id="header">
+      <h1>Isabel Báez's Portfolio</h1>
+        </div>
+        <img id='facepic' src="/images/face.jpeg" />
+      <div class="wordsContainer">
+      <p>My name is Isabel Báez and I am a sophmore at MIT. I'm majoring in Computer Science and minoring in Design. My favorite food is sushi and I'm currently obsessed with Criminal Minds. This is my portfolio.</p>
+      <p>Click <a href="images.html">here</a> to see some of my pictures!</p>
+      <p>Click <a href="tech.html">here</a> to learn about my Computer Science experience.</p>
+      <button onclick="addRandomFact()">Here's a fun fact!</button>
+      <div id="facts-container"></div>
+      </div>
     </div>
   </body>
 </html>
