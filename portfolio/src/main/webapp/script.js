@@ -27,3 +27,37 @@ function addRandomFact() {
   factsContainer.innerText = fact;
 }
 
+async function showString() {
+  const responseFromServer = await fetch('/string');
+  const textFromResponse = await responseFromServer.text();
+  
+  const stringContainer = document.getElementById('string-container');
+  stringContainer.innerText = textFromResponse;
+}
+
+/** Generates random string component. */
+function getRndString(min, max) {
+  return "string" + String(Math.floor(Math.random() * (max - min) ) + min);
+}
+
+console.log(getRndString(1, 3))
+/** Fetches stats from the server and adds them to the page. */
+async function getStrings() {
+  const responseFromServer = await fetch('/string');
+  // The json() function returns an object that contains fields that we can
+  // reference to create HTML.
+  const strings = await responseFromServer.json();
+
+  const stringsListElement = document.getElementById('string-container');
+  stringsListElement.innerHTML = '';
+
+  stringsListElement.appendChild(
+      createListElement(strings[getRndString(1, 4)]));
+}
+
+/** Creates an <li> element containing text. */
+function createListElement(text) {
+  const liElement = document.createElement('li');
+  liElement.innerText = text;
+  return liElement;
+}
