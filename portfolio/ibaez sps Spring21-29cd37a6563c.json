@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "ibaez-sps-spring21",
+  "private_key_id": "29cd37a6563c0ce3a9d83eff0406510b8ece193b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCaTLvWNEo07RT8\nYraSGuzsorM/QQDpXASMght5is1tMUWPK7FskeHLKZ55SKwcRZ5+3TRsW9W/jLHW\nnRJy5drHzdUBcWYWMQY9bEVEnivD4mTPJscRiyEjeVibdEowtt2nsxRGOyU7W8my\n5n00uGZsPrg+y6Opj2bPrCrk0+Lk7FAeZrCqOjfX+DCxVLN9k27zKvRqI/cGkrbO\nzsz4oKQ+7y9bL2cSXV28OJjVpCu9ZA4x2W3MlFXY8hUlZ+X/krYRBKEKbfMmPFkT\n+OH+wdqvD0ywv86nY/KIDI93okBGnHP8o4dub5QhZRzVcfxbBIkb9gcjDQaC3unU\nLr9tl2InAgMBAAECggEABQvWu3irp0jMU5IUOnmwSe+Vlnn/wkyvcWZH6RUFsY6C\nTIkMnRUK92P9uiW1oJm+Rz6Lb7Jz2SHhfGKtWciepm4wNdiJktbjnK/6dqCy+bhh\nEk1IXBCFcu2Nsk0pUqfds+sCvLvudHSEsi8g5SUqubDgwbJTQJZfXGdbDRoeOjJb\nTe7Cr5J1aZ9gsrCg4gbwABV1kcexiqL32zYELipxn2v8wbPg8mr+RUuX+0x6vQgZ\n+NU8e6Vauofkd+oc4CJbGv8h+YFQA2PhCWyqOSZ/cwLTFL9IySY4WIwCxnmqnp8C\nq8SUh9aDSmf2zRurEOb4VfKp0fP54VyrsSrHXAEEUQKBgQDMFx6Ez+ctgFep//Hw\nr2Clg+cXsFuFOVNiplIRNzpl8Pwk4s009yDRQQeefdg5F7dQHofoARO76aGqgXFs\nJyVJUOWHDSLsjDg0dDv7cAQMuZbxH1O9T5GCXbxqNmMUKJUhXs7n9k1QCpzrshEE\nWm04Zdj1g+PJXXXOMDkO9168KwKBgQDBi50jiCwQn4Pm37q4S8qNWowLoxkHOMMh\nu6cWghnoFbMor5GTX/Yn9TIZczZ75wcUHrhSphjh7l0yXg+LLK9JjZwUQn6Frn49\nT9QI0bN2B6wGQmOGGoxtSWeOn2R3VImY1X/dShCInhPF1SEWWgHyZz5NB38YrTAg\n6kslQqhn9QKBgHODHlXjah/5xSRF5cTpLlVf65sfyR0FTinGoyp1TMtH8x5Zc/Xn\nbZ6iJNLSvV/LCYkCTr/EZEv2NvdPXkftfBAcBl1C1SJ3VpRxuUVdqB0fqcv9hCLg\n9yWHMk4XTEqrkYSaqZbmc+m6qAhK95C0MZ87HeoP5Qwipru11YWgAvGTAoGBALdH\nq7XTJM9VD0ZZhWsysowrO8VlXLUfBoHyPucsqrXBntgfcj7aN7NdGWVKWkT44RYn\nhSsXCSciX3Tr59JGrXN8u1ngIgob1IXhC4yScFyMJVYEFlUO3P487ej8fdoW3vow\n65W1pnSJJXZJPrz43TEcnb26JJxMnO/+jsypE+rlAoGBAJKu/gdLPj6/WNE7rwCV\nBPo3ztrAd+T+n4Mmz4EAQSkNXfgqn+qHrmzk3BBgPmMELxEUXvJ8XHI0nHp053WC\ntncSfHlLE3VmJsmC7o7AHM2/NlEzHKqx2wDnj3L6VEALwCfUsvp7Dz/ZgFOT77/A\nhD+h0DORYka2jsm+/pJwC20l\n-----END PRIVATE KEY-----\n",
+  "client_email": "portfolio-ibaez@ibaez-sps-spring21.iam.gserviceaccount.com",
+  "client_id": "117632194944558696240",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/portfolio-ibaez%40ibaez-sps-spring21.iam.gserviceaccount.com"
+}

@@ -1,32 +1,139 @@
 .content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
-  background-color: lavender;
-  padding: 2px;
-  padding-left: 2;
-  height: 80vh;
-  width: 50vw;
+  background-image: url("/images/killian.jpeg");
+  background-size: 100%;
+  height: 125vh;
+  width: 100vw;
 }
 
-#greeting-container {
-  margin-top: 20px;
+.pic{
+    background-color: rgb(255, 202, 227);
+    border-radius: 4vw; 
+    height: 35vh;
+    padding: 1vw;
+
 }
 
 #facepic{
     width: 15vw;
     height: 35vh;
-    margin-left: 18vw;
+    border-radius: 3vw;
 }
 
-#header{
+#child{
+    width: 15vw;
+    height: 35vh;
+    border-radius: 3vw;
+}
+
+#dancing{
+    width: 32vw;
+    height: 35vh;
+    border-radius: 3vw;
+}
+
+.filler{
+    width: 50vw;
+}
+.title{
+    color: rgb(255, 202, 227);
+}
+
+.mainContainer{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bolder;
-    margin: 30px;
+    font-size: 1.7vw;
+    color: rgb(250, 250, 250);
+    width: 70vw;
+    padding: 2vw;
+    margin-left: 13vw;
+    margin-top: 10vh;
+    border-radius: 3vw;    
 }
 
-.wordsContainer{
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: lighter;
-    margin: 30px;
+.line{
+    background-color: rgb(255, 202, 227);
+    width: 60vw;
+    height: 1vh;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.space{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 10vw;
+}
+
+.tab{
+    margin-top: 1vw;
+}
+
+#facts-container{
+    margin-top: 1vw; 
+}
+
+.button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 1.4vw;
+    background-color: rgb(230, 230, 230, 0.3);
+    border: 1vw;  
+    border-color: rgb(250, 250, 250, 1);
+    border-radius: 3vw;
+    margin-top: 1vw; 
+    padding: 1vw; 
+    font-weight: bolder;  
+    
+}
+
+.navBar{
+  height: 8vh;
+  width: 100vw;
+  background-color: rgb(230, 230, 230, 0.4);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: light;
+  font-size: 2vw;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+a:link, a:visited {
+  color: rgb(255, 255, 255);
+   text-decoration: none;
+}
+
+/* mouse over link */
+a:hover, a:active {
+  color: rgb(255, 255, 255,0.5);
+   text-decoration: none;
+}
+
+.translationButton{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 1.3vw;
+    background-color: rgb(230, 230, 230, 0.2);
+    border: 0.5vw;  
+    border-color: rgb(250, 250, 250, 1);
+    border-radius: 3vw;
+    margin-top: 1vw; 
+    padding-left: 1vw;   
+    padding-right: 1vw;  
+    padding-top: 0.5vw; 
+    padding-bottom: 0.5vw; 
+}
+
+.textBox{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 1.4vw;
+    background-color: rgb(230, 230, 230, 0.4);
+    border: 1vw;  
+    border-color: rgb(250, 250, 250, 1);
+    border-radius: 3vw; 
+    padding-left: 2vw; 
+    padding-top: 1.5vw; 
 }

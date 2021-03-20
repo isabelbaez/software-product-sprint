@@ -17,7 +17,7 @@
  */
 function addRandomFact() {
   const facts =
-      ['I was born and raised in San Juan, Puerto Rico.', 'My father and his family are from Cuba.', 'I love sushi.', 'I have 6 cats and 2 dogs back home.', 'My favorite books is called The Song of Achilles.', 'My favorite movies are Hereditay and Midsommar.'];
+      ['I was born and raised in San Juan, Puerto Rico.', 'My father and his family are from Cuba.', 'I love sushi.', 'I have 6 cats and 2 dogs back home.', 'My favorite book is called "The Song of Achilles."', 'My favorite movies are Hereditay and Midsommar.'];
 
   // Pick a random greeting.
   const fact = facts[Math.floor(Math.random() * facts.length)];
@@ -25,19 +25,6 @@ function addRandomFact() {
   // Add it to the page.
   const factsContainer = document.getElementById('facts-container');
   factsContainer.innerText = fact;
-}
-
-async function showString() {
-  const responseFromServer = await fetch('/string');
-  const textFromResponse = await responseFromServer.text();
-  
-  const stringContainer = document.getElementById('string-container');
-  stringContainer.innerText = textFromResponse;
-}
-
-/** Generates random string component. */
-function getRndString(min, max) {
-  return "string" + String(Math.floor(Math.random() * (max - min) ) + min);
 }
 
 console.log(getRndString(1, 3))
@@ -52,12 +39,37 @@ async function getStrings() {
   stringsListElement.innerHTML = '';
 
   stringsListElement.appendChild(
-      createListElement(strings[getRndString(1, 4)]));
+      createListElement(strings[Math.floor(Math.random() * strings.length)]));
 }
 
 /** Creates an <li> element containing text. */
 function createListElement(text) {
-  const liElement = document.createElement('li');
+  const liElement = document.createElement('p');
   liElement.innerText = text;
   return liElement;
 }
+
+function requestTranslation() {
+    const texts = document.getElementsByClassName('filler');
+    const languageCode = document.getElementById('language').value;
+    const results = document.getElementsByClassName('result');
+
+    for (i = 0; i < texts.length; i++) {
+        const text = texts[i].innerText;
+        const resultContainer = results[i];
+        resultContainer.innerText = 'Loading...';
+
+        const params = new URLSearchParams();
+        params.append('text', text);
+        params.append('languageCode', languageCode);
+
+        fetch('/translate', {
+            method: 'POST',
+            body: params
+            }).then(response => response.text())
+            .then((translatedMessage) => {
+            resultContainer.innerText = translatedMessage;
+            });
+        }
+        
+    }

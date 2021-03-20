@@ -3,19 +3,58 @@
     <link rel="stylesheet" href="style.css">
   <head>
     <meta charset="UTF-8">
-    <title>My Journey in Computer Science</title>
+    <title>Experience</title>
     <script src="script.js"></script>
   </head>
   <body>
     <div class="content">
-    <div class="wordsContainer">
-       <p> I started my Computer Science journey during January of my freshmanyear at MIT. Some projects I've worked on are:</p>
-       <p>Murmur (mailing list system)- currentlyworkingon</p>
-       <p>Identity Theft (online game) - co-creating</p>
-       <p>CNSJ Alumni Database (alumni database for a local nonprofit) - created </p>
+        <div class="navBar">
 
-       <p>Check Out my <a href="https://github.com/isabelbaez"> Github! </a> </p>
-       <p>Check Out my <a href="https://www.linkedin.com/in/isabel-baez/"> LinkedIn! </a> </p>
+            <a href="index.html" class=tab > Home</a>
+            <a href="images.html" class=tab > Photo Gallery</a>
+            <a href="tech.html" class=tab > Experience</a>
+            <a href="https://github.com/isabelbaez" class=tab> Github </a>
+            <a href="https://www.linkedin.com/in/isabel-baez/" class=tab> LinkedIn </a>
+            <a href="contact.html" class=tab > Contact Me</a>
+            
+            </div>
+
+    <div class="mainContainer">
+
+        <div class="title">
+            <h1>Past Projects</h1>
+        </div>
+        <div class="line"></div>
+
+        <div class="filler">
+            <p>CNSJ Alumni Database (alumni database for a local nonprofit) - Creator </p>
+        </div>
+
+        <div class="result"></div>
+       
+        <div class="title">
+            <h1>Current Projects</h1>
+        </div>
+        <div class="line"></div>
+
+        <div class="filler">
+            <p>Identity Theft (online game) - Co-creator</p>
+            <p>Murmur (mailing list system) - Undergraduate Researcher</p>
+        </div>
+
+        <div class="result"></div>
+
+        <select class='translationButton' id="language">
+                <option value="en">English</option>
+                <option value="zh">Chinese</option>
+                <option value="es">Spanish</option>
+                <option value="hi">Hindi</option>
+                <option value="ar">Arabic</option>
+            </select>
+        
+
+        <button class='translationButton' onclick="requestTranslation()">Translate</button>
+
     </div>
     </div>
   </body>
